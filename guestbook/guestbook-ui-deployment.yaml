@@ -12,12 +12,12 @@ spec:
     metadata:
       labels:
         app: guestbook-ui
+	demo: "HalloArgo"
     spec:
       containers:
         - image: gcr.io/google-samples/gb-frontend:v5
           name: guestbook-ui
           ports:
             - containerPort: 80
-  env:
-            - name: DEMO_TEXT
-              value: "Demo: Hello from Argo CD!"
+
+
